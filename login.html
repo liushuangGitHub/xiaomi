@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米账号-登陆</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="header main">
+        <div class="logo">
+            <a href="//www.mi.com/index.html" target="_parent" >小米网</a>
+        </div>
+    </div>
+<div class="banner">
+    <div class="ban_img">
+        <a href="//www.mi.com/index.html" target="_parent" >小米网</a>
+    </div>
+    <div id="Login">
+        <ul class="main">
+            <li> <a  class="a1" href="javascript:">帐号登录</a>
+            </li>
+            <li>
+                <a  class="a2" href="javascript:">扫码登录</a>
+            </li>
+        </ul>
+        <span class="line">|</span>
+        <div class="cc active">
+        <form action="" autocomplete="" class="form1">
+            <div>
+                <input type="text" placeholder="邮箱/手机号码/小米ID"  >
+            </div>
+        <div class="passTop">
+            <input type="password" placeholder="密码"  >
+        </div>
+            <div class="subT" >
+                <input type="submit" value="登录" id="submit1">
+            </div>
+        </form>
+        <div class="registration main">
+            <a href="javascript:">手机短信登录/注册</a>
+           <div class="registrationR">
+               <a href="">立即注册</a>
+               <span>|</span>
+               <a href="">忘记密码？</a>
+           </div>
+        </div>
+        <div class="custom main">
+            <div class="customLine "></div>
+            <div class="customText">其他方式登录</div>
+        </div>
+        <div class="links main ">
+            <a class="bg QQ" href="javascript:" title="qq登录" target="_blank">
+                <i class="icon icon_qq"></i>
+            </a>
+            <a class="bg weibo" href="javascript:" title="qq登录" target="_blank">
+                <i class="icon icon_weibo"></i>
+            </a>
+            <a class="bg alipay" href="javascript:" title="qq登录" target="_blank">
+                <i class="icon icon_alipay"></i>
+            </a>
+            <a class="bg weixin" href="javascript:" title="qq登录" target="_blank">
+                <i class="icon icon_weixin"></i>
+            </a>
+        </div>
+        </div>
+        <div class="cc1 cc ">
+            <div class="QR main">
+                <img src="img/erweima.png" alt="">
+            </div>
+            <p class="p1" >使用 <span>小米商城APP</span> 扫一扫</p>
+            <p class="p2">小米手机可打开「设置」>「小米帐号」扫码登录</p>
+        </div>
+        </div>
+    </div>
+<div class="footer ">
+    <ul>
+        <li><a href="javascript:">简体</a>|</li>
+        <li><a href="javascript:">繁体</a>|</li>
+        <li><a href="javascript:">English</a>|</li>
+        <li><a href="https://static.account.xiaomi.com/html/faq/zh_CN/faqList.html" target="_blank">常见问题</a>|</li>
+        <li><a href="http://www.miui.com/res/doc/privacy/cn.html" target="_blank">隐私政策</a>|</li>
+    </ul>
+   <p>小米公司版权所有-京ICP备10046444-
+       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"  target="_blank"><span><img src="img/gh.png" alt=""></span>京ICP证110507号</a>
+       -京ICP证110507号
+   </p>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $('#Login ul li').on('click',function () {
+        console.log(this);
+        $(this).addClass('active').siblings().removeClass('active').parent().nextAll('div').eq($(this).index()).addClass('active').siblings('div').removeClass('active')
+    })
+</script>
+</body>
+</html>

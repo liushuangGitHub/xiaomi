@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+}
+.main{
+    margin:0 auto;
+    width: 1130px;
+}
+.header{
+    height: 98px;
+}
+.header .logo{
+    width: 200px;
+    height: 98px;
+    background: url("../img/logo.png")no-repeat;
+    position: relative;
+}
+.header .logo a{
+  display: block;
+    width: 200px;
+    height: 98px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -9999em;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 588px;
+}
+.banner .ban_img{
+position: relative;
+}
+.banner .ban_img a{
+    background: url("../img/banner1.jpeg") no-repeat ;
+    background-position: top center;
+    display: block;
+    width: 100%;
+    height: 588px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -9999em;
+}
+#Login{
+    position: absolute;
+    width: 410px;
+    height: 556px;
+    background: white;
+    top:130px;
+    right: 109px;
+}
+#Login ul{
+    width: 300px;
+    height: 82px;
+    list-style: none;
+}
+#Login ul li{
+    float: left;
+    line-height: 82px;
+    width: 50%;
+}
+#Login ul li a{
+    color: #757575;
+    text-align: center;
+    line-height:84px;
+    text-decoration: none;
+    font-size: 24px;
+}
+#Login ul li .a1{
+color: #f56600;
+margin-left: -10px;
+}
+#Login ul li .a2{
+    margin-left: 22px;
+}
+#Login li a:hover{
+color: #f56600;
+}
+#Login .line{
+    display: block;
+    width: 1px;
+    font-size: 24px;
+    position: absolute;
+    top:23px;
+    left: 202px;
+    color:#e0e0e0
+}
+#Login .form1{
+    width: 346px;
+    padding: 10px 32px;
+}
+#Login .form1 div{
+    width: 346px;
+    height: 48px;
+}
+#Login .form1 input{
+    padding: 13px 16px 13px 14px;
+    width: 316px;
+    height: 22px;
+    /*border: 0;*/
+   line-height: 22px;
+    border: 1px solid #bcbcbc;
+}
+input::-webkit-input-placeholder { color: #757575;}
+#Login .form1 .passTop{
+    margin-top: 12px;
+}
+#Login .form1 .subT{
+    padding-top: 28px;
+    margin-left: -1px;
+}
+#Login .form1 #submit1{
+    width: 348px;
+    height: 50px;
+    background-color: #ef5b00;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+#Login .registration{
+    width: 348px;
+    height: 19px;
+}
+#Login .registration a{
+    color: #ef5b00;
+    line-height: normal;
+    font-size: 14px;
+    text-decoration: none;
+}
+#Login .registrationR{
+    float: right;
+}
+#Login .registrationR a{
+    color: #999;
+}
+#Login .registrationR a:hover{
+    color: #ef5b00;
+}
+#Login .custom{
+    width: 248px;
+    height: 29px;
+    /*background: #fadb4e;*/
+    margin-top: 130px;
+    text-align: center;
+}
+#Login .customLine{
+    width: 348px;
+    height: 18px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-left: -50px;
+}
+#Login .customText{
+    margin: 0 132px;
+    width: 84px;
+    height: 19px;
+    color: #bbb;
+    font-size: 14px;
+   margin-top: -39px;
+    margin-left: 82px;
+    background: white;
+}
+
+#Login .links{
+    width: 348px;
+    height: 33px;
+    text-align: center;
+    margin-top: -5px;
+}
+#Login .links .bg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 17px;
+
+}
+#Login .links .QQ{
+    background: #0288d1;
+}
+#Login .links .weibo{
+    background: #d32f2f;
+}
+#Login .links .alipay{
+    background: #0ae;
+}
+#Login .links .weixin{
+    background: #00d20d;
+}
+#Login .links .icon{
+    background: url("../img/icon.png");
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align:middle;
+    margin:4px auto 0;
+}
+#Login .links .icon_qq{
+    background-position:-19px 0;
+}
+#Login .links .icon_weibo{
+    background-position:-38px 0;
+}
+#Login .links .icon_alipay{
+    background-position:-57px 0;
+    width: 27px;
+}
+#Login .links .icon_weixin{
+    background-position:-83px 0;
+    width: 24px;
+}
+.footer{
+    /*width: 774px;*/
+    height: 80px;
+    margin-top: 80px;
+    text-align: center;
+}
+.footer ul{
+    list-style: none;
+    text-decoration: none;
+    height: 19px;
+    margin: 0 auto;
+}
+.footer ul li{
+    display: inline-block;
+    height: 19px;
+    line-height:19px;
+}
+.footer ul li a{
+    text-decoration: none;
+        text-align: center;
+        color: #333 ;
+    padding: 0 10px 0;
+}
+.footer ul li a:hover{
+    color: black;
+}
+.footer p{
+    color: #333 ;
+}
+.footer p a{
+    text-decoration: none;
+    color:#333  ;
+}
+.footer p span{
+    width: 20px;
+    height: 20px;
+}
+#Login .cc{
+    width: 410px;
+    height: 376px;
+    display: none;
+}
+#Login .cc.active{
+    display: block !important;
+}
+#Login .cc1{
+    padding-top: 105px;
+}
+#Login .cc1 .QR{
+    width: 182px;
+    height: 182px;
+}
+#Login .cc1 p{
+    text-align: center;
+    font-size: 14px;
+   margin: 0;
+    color: #757575;
+}
+#Login .cc1 .p1{
+    margin-top: 14px;
+}
+#Login .cc1 .p2{
+    margin-top: 2px;
+}
+#Login .cc1 p span{
+    color: #f56600;
+}

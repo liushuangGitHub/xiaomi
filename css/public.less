@@ -1,0 +1,44 @@
+@color-white:#fff;
+@url:"../img";
+
+.pos(@position:absolute;@left:auto;@right:auto;@top:auto;@bottom:auto;@zIndex:0){
+  position: @position;
+  left:@left;
+  top:@top;
+  bottom: @bottom;
+  right:@right;
+  z-index: @zIndex;
+}
+.transition(@property:all;@duration:1s;@timing-function:ease;@delay:0s){
+  /*-webkit-transition:@property  @duration @timing-function @delay;
+  -moz-transition:@property  @duration @timing-function @delay;
+  -ms-transition:@property  @duration @timing-function @delay;
+  -o-transition:@property  @duration @timing-function @delay;
+  transition:@property  @duration @timing-function @delay;*/
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments ;
+  -ms-transition: @arguments ;
+  -o-transition: @arguments ;
+  transition: @arguments ;
+}
+
+.linearGradient(@direction:top;@startColor:#ffffff;@endColor:#f7f7f7){
+  background: -webkit-linear-gradient(@arguments);
+  background: -moz-linear-gradient(@arguments);
+  background: -ms-linear-gradient(@arguments);
+  background: -o-linear-gradient(@arguments);
+  background: linear-gradient(@arguments);
+}
+.css3(@k,@v){
+  -o-@{k}: @v;
+  -moz-@{k}: @v;
+  -ms-@{k}: @v;
+  -webkit-@{k}:@v;
+    @{k}: @v;
+}
+
+.opacity(@val:1){
+  @result:@val*100;
+  opacity: @val;
+  filter:~"alpha(opacity = @{result})";
+}
